@@ -1,4 +1,4 @@
-# Template
+# 🕯️ Template
 
 A React template so I don't have to keep stripping down Create React Apps and hooking it up with a router, context, scss, etc.
 
