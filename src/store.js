@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 
 const initialState = {
-  text: 'default text',
+  text: 'Default text...',
 };
 
 export const Context = createContext(initialState);

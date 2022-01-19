@@ -4,5 +4,16 @@
   .header-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      font-size: 3.5rem;
+
+      span:first-of-type {
+        margin-right: 0.5rem;
+      }
+    }
   }
 }

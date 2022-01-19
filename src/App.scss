@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -91,7 +90,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -137,21 +135,15 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   color: #ddd;
   background-color: #333;
-
-  @media screen and (max-width: 992px) {
-  }
-  @media screen and (max-width: 768px) {
-  }
-  @media screen and (max-width: 576px) {
-    font-size: 1.5rem;
-  }
 }
 
 /* Template */
+
+$link-color: rgb(49, 182, 100);
 
 h1 {
   font-size: 4rem;
@@ -163,12 +155,28 @@ h2 {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 a {
   text-decoration: none;
-  color: rgb(62, 230, 230);
+  color: $link-color;
+
+  &:hover {
+    color: lighten($link-color, 5%);
+    transition: 0.3s ease;
+  }
+}
+
+b {
+  font-weight: bold;
+}
+
+code {
+  padding: 0 3px;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  background-color: #555;
 }
 
 .app {
@@ -190,5 +198,5 @@ a {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem;
 }
