@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './header.scss';
 
-function Header() {
+export const Header = () => {
   return (
     <header className='app-header'>
       <div className='header-nav container'>
@@ -13,6 +13,4 @@ function Header() {
       </div>
     </header>
   );
-}
-
-export default Header;
+};
